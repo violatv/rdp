@@ -8,22 +8,11 @@ gunzip w2016.gz
 echo "Wait..."
 echo "I m Working Now.."
 mv w2016 w2016.img
-wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
+wget -O ng.sh https://raw.githubusercontent.com/violatv/rdp/main/GCngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
 clear
-echo "======================="
-echo choose ngrok region
-echo "======================="
-echo "us - United States (Ohio)"
-echo "eu - Europe (Frankfurt)"
-echo "ap - Asia/Pacific (Singapore)"
-echo "au - Australia (Sydney)"
-echo "sa - South America (Sao Paulo)"
-echo "jp - Japan (Tokyo)"
-echo "in - India (Mumbai)"
-read -p "choose ngrok region: " CRP
-./ngrok tcp --region $CRP 3388 &>/dev/null &
+./ngrok tcp --region us 3388 &>/dev/null &
 clear
 echo Downloading files from aank.me
 apt-get install qemu-system-x86 -y
