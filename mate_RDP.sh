@@ -6,7 +6,7 @@ unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
 apt update && apt upgrade -y
-apt install firefox -y
+apt-get install firefox -y
 apt-get install -y xrdp
 apt-get install mate-core mate-desktop-environment mate-notification-daemon -y
 service xrdp start
