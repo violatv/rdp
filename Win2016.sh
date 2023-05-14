@@ -1,4 +1,4 @@
-#! /bin/bash1
+#! /bin/bash
 # Make Instance Ready for Remote Desktop or RDP
 apt-get update
 rm -rf w2016 w2016.img w2016.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
