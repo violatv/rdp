@@ -28,7 +28,6 @@ echo "===================================="
 echo "Install xrdp"
 echo "===================================="
 apt install -y xrdp > /dev/null 2>&1
-sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
 service xrdp start > /dev/null 2>&1
 clear
 echo "=======================100%"
