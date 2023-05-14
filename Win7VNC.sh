@@ -1,14 +1,13 @@
 apt update
 apt install screen -y
-apt install sudo -y
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 ./ngrok authtoken 2FHQ9SC0PteACNxKnJLZlGSLo4o_83fgAadbdrp8sWhLrVWzv 
 nohup ./ngrok tcp 5900 &>/dev/null &
 echo Please wait for installing...
-sudo apt update -y > /dev/null 2>&1
+apt update -y > /dev/null 2>&1
 echo "Installing QEMU (2-3m)..."
-sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
+apt install qemu-system-x86 curl -y > /dev/null 2>&1
 clear
 echo Downloading Windows files from aank.me
 rm -rf win7 win7.img
