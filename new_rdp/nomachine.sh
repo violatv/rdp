@@ -1,8 +1,7 @@
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP 
+./ngrok authtoken 2FHQ9SC0PteACNxKnJLZlGSLo4o_83fgAadbdrp8sWhLrVWzv
 nohup ./ngrok tcp 4000 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt update && apt upgrade -y
