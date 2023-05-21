@@ -12,8 +12,8 @@ echo "===================================="
 sudo apt install firefox -y > /dev/null 2>&1
 echo "Install RDP"
 echo "===================================="
-sudo apt-get install -y xrdp > /dev/null 2>&1
-sudo apt-get install mate-core mate-desktop-environment -y > /dev/null 2>&1
+sudo apt-get install -y xrdp 2>&1
+sudo apt-get install mate-core mate-desktop-environment -y 2>&1
 echo "Start RDP"
 echo "===================================="
 sudo sed -i.bak '/fi/a mate-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
