@@ -10,7 +10,7 @@ sudo apt update && apt upgrade -y
 sudo apt install firefox -y
 sudo apt-get install -y xrdp
 sudo apt install ubuntu-gnome-desktop -y
-sudo apt install gnome-session gdm3
+sudo apt install gnome-session gdm3 -y
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 sudo service xrdp start
 clear
