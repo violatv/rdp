@@ -8,8 +8,7 @@ echo Downloading File From akuh.net
 apt update && apt upgrade -y
 apt-get install firefox -y
 sudo apt-get install xrdp -y
-sudo apt-get install ubuntu-desktop -y
-sudo apt install gnome-session gdm3
+sudo apt install ubuntu-desktop-minimal -y
 service xrdp start
 clear
 echo XRDP Address:
