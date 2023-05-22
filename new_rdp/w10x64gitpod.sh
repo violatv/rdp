@@ -1,4 +1,8 @@
 echo "===================================="
+echo "Download windows files"
+echo "===================================="
+curl -L -o w10x64.img https://bit.ly/akuhnetW10x64
+echo "===================================="
 echo "Download ngrok"
 echo "===================================="
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
