@@ -32,5 +32,5 @@ echo "===================================="
 echo "Username: akuh"
 echo "Password: Akuh.Net"
 echo "===================================="
-qemu-system-x86_64 -hda w10x64.img -m 8G -smp cores=40 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic  > /dev/null 2>&1
+qemu-system-x86_64 -hda w10x64.img -m 12G -smp cores=32 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic  > /dev/null 2>&1
 sleep 43200
