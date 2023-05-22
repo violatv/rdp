@@ -8,7 +8,13 @@ echo Downloading File From akuh.net
 apt update && apt upgrade -y
 apt-get install firefox -y
 apt-get install -y xrdp
-apt-get install mate-core mate-desktop-environment mate-notification-daemon -y
+sudo apt-get install ubuntu-desktop -y
+sudo apt-get install systemd -y
+sudo apt-get install systemctl -y
+sudo apt install vanilla-gnome-desktop vanilla-gnome-default-settings
+sudo apt install lightdm -y
+sudo systemctl start lightdm.service
+sudo service lightdm start
 service xrdp start
 clear
 echo XRDP Address:
