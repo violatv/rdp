@@ -5,7 +5,7 @@ unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 nohup ./ngrok tcp 4000 &>/dev/null &
 echo Downloading File From akuh.net
 sudo apt update && apt upgrade -y
-sudo apt install ubuntu-desktop -y
+sudo apt install ubuntu-desktop -y > /dev/null 2>&1
 wget -O nomachine.deb https://bit.ly/nomachinev7
 sudo apt install ./nomachine.deb
 clear
