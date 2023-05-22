@@ -7,7 +7,7 @@ nohup ./ngrok tcp 3389 &>/dev/null &
 echo Downloading File From akuh.net
 apt update && apt upgrade -y
 apt-get install firefox -y
-apt-get install -y xrdp
+sudo apt-get install xrdp -y
 sudo apt-get install ubuntu-desktop -y
 sudo apt-get install systemd -y
 sudo apt-get install systemctl -y
