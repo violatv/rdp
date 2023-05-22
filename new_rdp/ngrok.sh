@@ -1,13 +1,11 @@
 echo "======================="
+rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
 echo "Download ngrok"
 echo "======================="
-rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
 read -p "Paste Ngrok Authtoken: " CRP
-./ngrok authtoken $CRP
-chmod +x ngrok.sh
-./ngrok.sh
+./ngrok authtoken $CRP 
 clear
 echo "======================="
 echo choose ngrok region
