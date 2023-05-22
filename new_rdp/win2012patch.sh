@@ -1,6 +1,5 @@
 apt-get update
 echo "Windows server datacenter 2012 by Mapleon"
-wget -O win2012.vhd https://go.microsoft.com/fwlink/p/?linkid=2195172&clcid=0x409&culture=en-us&country=us
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
 chmod +x ng.sh
