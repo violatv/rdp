@@ -1,4 +1,3 @@
-echo -e "$123\n$123\n" | sudo passwd
 rm -rf ngrok  ngrok.zip  ngrok.sh > /dev/null 2>&1
 wget -O ngrok.sh https://github.com/violatv/rdp/raw/main/new_rdp/ngrok.sh > /dev/null 2>&1
 chmod +x ngrok.sh
