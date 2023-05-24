@@ -2,9 +2,6 @@
 # Make Instance Ready for Remote Desktop or RDP
 apt-get update
 rm -rf w2016 w2016.img w2016.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
-echo "Download windows files"
-wget -O w2016.gz https://go.aank.me/win/W2016-aank.gz
-gunzip w2016.gz
 echo "Wait..."
 echo "I m Working Now.."
 mv w2016 w2016.img
