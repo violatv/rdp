@@ -1,14 +1,14 @@
 #! /bin/bash
 # Make Instance Ready for Remote Desktop or RDP
 apt-get update
-rm -rf w2022 w2022.img w2022.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
-echo "Download windows files"
-wget -O w2022.gz https://archive.org/download/windows2022/windows2022.gz
-gunzip w2022.gz
+rm -rf win2012 win2012.vhd win2012.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
+echo "Windows server datacenter 2012"
+wget -O win2012.gz https://archive.org/download/winsrv2012r2-data-x64-us-efi.vhd_202205/winsrv2012r2-data-x64-us-efi.vhd.gz
+gunzip win2012.gz
 echo "Wait..."
 echo "I m Working Now.."
-mv w2022 w2022.img
-wget -O ng.sh https://raw.githubusercontent.com/violatv/rdp/main/GCngrok.sh > /dev/null 2>&1
+mv win2012 win2012.vhd
+wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
 clear
