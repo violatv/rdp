@@ -3,7 +3,7 @@
 apt-get update
 rm -rf win2012 win2012.vhd win2012.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Windows server datacenter 2012"
-wget -O win2012.gz https://soft.shaobing.ru/Windows/natee/win/lite/winsrv2012r2-data-x64-us/winsrv2012r2-data-x64-us.vhd.gz
+wget -O win2012.gz https://soft.shaobing.ru/Windows/natee/win/lite/winsrv2012r2-data-x64-us/winsrv2012r2-data-x64-us.vhd.gz w
 gunzip win2012.gz
 echo "Wait..."
 echo "I m Working Now.."
