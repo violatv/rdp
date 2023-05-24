@@ -2,13 +2,15 @@
 # Make Instance Ready for Remote Desktop or RDP
 apt-get update
 rm -rf w2016 w2016.img w2016.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
+mv w2016 w2016.img
 echo "Wait..."
 echo "I m Working Now.."
-mv w2016 w2016.img
-wget -O ng.sh https://raw.githubusercontent.com/violatv/rdp/main/GCngrok.sh > /dev/null 2>&1
-chmod +x ng.sh
-./ng.sh
-clear
+echo "Download ngrok"
+echo "===================================="
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok-stable-linux-amd64.zip &>/dev/null &
+read -p "Ctrl + V Authtoken: " CRP 
+./ngrok authtoken $CRP
 ./ngrok tcp --region us 3388 &>/dev/null &
 clear
 echo Downloading files from aank.me
