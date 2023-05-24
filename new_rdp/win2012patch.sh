@@ -1,3 +1,5 @@
+#! /bin/bash
+# Make Instance Ready for Remote Desktop or RDP
 apt-get update
 rm -rf w2022 w2022.img w2022.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
