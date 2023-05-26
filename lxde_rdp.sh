@@ -1,7 +1,7 @@
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
-wget -O ng.sh https://raw.githubusercontent.com/violatv/rdp/main/GCngrok.sh > /dev/null 2>&1
-chmod +x ng.sh
-./ng.sh
+wget -O ngrok.sh https://github.com/violatv/rdp/raw/main/new_rdp/ngrok.sh > /dev/null 2>&1
+chmod +x ngrok.sh
+./ngrok.sh
 echo "================================"
 echo "Wait Downloading file 3-4 minutes"
 echo "More free vps visit 👉akuh.net👈"
