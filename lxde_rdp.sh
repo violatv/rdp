@@ -6,9 +6,9 @@ echo "================================"
 echo "Wait Downloading file 3-4 minutes"
 echo "More free vps visit 👉akuh.net👈"
 echo "================================"
-sudo apt-get install lxde > /dev/null 2>&1
+sudo apt-get install lxde -y
 echo "===========40%"
-sudo apt install -y xrdp > /dev/null 2>&1
+sudo apt install -y xrdp
 sudo sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
 echo "===============60%"
 echo "==============="
